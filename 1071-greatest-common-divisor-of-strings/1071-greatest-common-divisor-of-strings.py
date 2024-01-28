@@ -3,10 +3,15 @@ class Solution:
         if str1 + str2 != str2 + str1:
             return ""
         
-        gcd_length = self.computeGCD(len(str1), len(str2))
+        gcd_length = 0
+        a=len(str1)
+        b=len(str2)
+        while b>0:
+            # a=b
+            remainder=a%b
+            a=b
+            b=remainder
+          
+        gcd_length=a
         return str1[:gcd_length]
     
-    def computeGCD(self, a: int, b: int) -> int:
-        while b:
-            a, b = b, a % b
-        return a
