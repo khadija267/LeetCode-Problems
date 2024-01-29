@@ -5,10 +5,13 @@ class Solution:
         i = 0
 
         while i < size:
-            if flowerbed[i] == 0:
-                if (i == 0 or flowerbed[i - 1] == 0) and (i == size - 1 or flowerbed[i + 1] == 0):
-                    count += 1
-                    i += 1  # Skip the next plot since we cannot plant a flower there
-            i += 1
+            if flowerbed[i] == 0 and (i == 0 or flowerbed[i - 1] == 0) and (i == size - 1 or flowerbed[i + 1] == 0):
+                count += 1
+                i += 2  # Skip the next plot since we cannot plant a flower there
+            else:
+                i += 1
 
-        return count >= n
+            if count >= n:
+                return True
+
+        return False
