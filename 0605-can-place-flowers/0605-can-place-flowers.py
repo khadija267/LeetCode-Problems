@@ -4,13 +4,11 @@ class Solution:
         for index, item in enumerate(flowerbed):
             if n==0:
                 return True
-            
             if len_flowerbed==0:
                 if flowerbed[index]==1:
                     return False
                 else:
                     return True
-                
             if ((flowerbed[0]==0)&(flowerbed[1]==0)):
                 flowerbed[0]=1
                 n-=1
