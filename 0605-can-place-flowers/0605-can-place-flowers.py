@@ -4,7 +4,7 @@ class Solution:
         for index, item in enumerate(flowerbed):
             if n==0:
                 return True
-                
+            
             if len_flowerbed==0:
                 if flowerbed[index]==1:
                     return False
