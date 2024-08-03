@@ -1,6 +1,5 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-        import numpy as np
         result=[]
         max_candies=max(candies)
         new_candies_list= [i+extraCandies for i in candies]
