@@ -31,7 +31,7 @@ class Solution:
             
         print('prior chars ' , chars)
         print('final string ' ,s)
-        chars[:]=list([str(ch) for ch in s])
+        chars[:]=list(s)
         print('final chars ', chars)
         return len(s)
 
