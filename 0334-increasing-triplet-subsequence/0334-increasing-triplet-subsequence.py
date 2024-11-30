@@ -21,8 +21,10 @@ class Solution:
             elif (m2>=nums[i]):
                 m2=nums[i]
                 print('m2',m2)
-            elif m1<m2:
+            else:
                 return True
+            # elif m1<m2:
+            #     return True
         return False
                 
                 
